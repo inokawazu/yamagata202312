@@ -27,7 +27,7 @@ toc: false
 ::: {.column width="50%"}
 
 [Amano, Kaminski et al. 2023][amano2023]
-: an overview of recent developments arising from the study of simply spinning Myers-Perry black holes
+: an overview of recent developments arising from the study of simply spinning AdS Myers-Perry black holes
 
 Goal ...
 
