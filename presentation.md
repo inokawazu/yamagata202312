@@ -170,26 +170,6 @@ In $4+1$D there are two independent planes of rotation $\implies$ to independent
 
 ## 5D AdS Myers-Perry Metric ([Hawking & Reall 1998][hawking1998])
 
-<!-- \begin{align}\label{eq:MP_Black_Hole} -->
-<!-- ds^2&=\frac{\left(1+r_H^2\ell^{-2}\right)}{\rho ^2 r_H^2} \left(a b \mathrm{d} t_H-\frac{b  \left(a^2+r_H^2\right) \sin ^2(\theta_H )}{\Xi_a}\mathrm{d} \phi_H-\frac{a  \left(b^2+r_H^2\right) \cos ^2(\theta_H )}{\Xi_b}\mathrm{d}\psi_H\right)^2 \nonumber\\ -->
-<!--     &-\frac{\Delta_r}{\rho ^2} \left(\mathrm{d} t_H-\frac{ a \sin ^2(\theta_H )}{\Xi_a}\mathrm{d} \phi_H-\frac{b  \cos ^2(\theta_H )}{\Xi_b}\mathrm{d} \psi_H\right)^2 +\frac{ \rho ^2}{\Delta_\theta}\mathrm{d} \theta_H^2+\frac{ \rho ^2}{\Delta_r}\mathrm{d} r_H^2\nonumber\\ -->
-<!--     &+\frac{\Delta_\theta \sin ^2(\theta_H )}{\rho ^2} \left(a \mathrm{d} t_H-\frac{ a^2+r_H^2}{\Xi_a}\mathrm{d} \phi_H\right)^2+\frac{\Delta_\theta \cos ^2(\theta_H )}{\rho ^2}  \left(b \mathrm{d} t_H-\frac{ b^2+r_H^2}{\Xi_b}\mathrm{d} \psi_H\right)^2 -->
-<!-- \end{align} -->
-
-<!-- - Coordinates $(t_H, \theta_H, \phi_H, \psi_H, r_H)$ -->
-<!-- - Angular momentum parameters of $a$ and $b$. -->
-
-<!-- ------------------------- -->
-
-<!-- \begin{align*} -->
-<!--     \Delta_r&=\frac{1}{r_H^2}(r_H^2+a^2) (r_H^2+b^2)(\frac{r_H^2}{\ell^2}+1)-2M \, ,\\ -->
-<!--      \Delta_\theta&=1-\frac{a^2}{\ell^2}\cos(\theta_H)^2-\frac{b^2}{\ell^2}\sin(\theta_H)^2\, , \\ -->
-<!--     \rho^2&=r_H^2+a^2\cos(\theta_H)^2+b^2\sin(\theta_H)^2 \, ,\\ -->
-<!--     \Xi_a&=1-\frac{a^2}{\ell^2}\, , \quad \Xi_b=1-\frac{b^2}{\ell^2} \,. -->
-<!-- \end{align*} -->
-
-<!-- ------------------------- -->
-
 <!-- Simply Spinning -->
 <!-- : Enhance the symmetry with $a=b$. -->
 
@@ -246,112 +226,6 @@ The EOM and boundary conditions together define
 
 - a non-linear eigenvalue problem and
 - discrete spectra of frequencies $\omega$ given momentum.
-
-<!-- \begin{equation}\label{eq:pertsimplygeneric} -->
-<!--     h_{\mu\nu} = \int d\omega e^{-i\omega t} \sum_{\mathcal{J} = 0} \sum_{\mathcal{M}=\mathcal{-J}}^{\mathcal{J}} \sum_{\mathcal{K'}=-(\mathcal{J}+2)}^{\mathcal{J}+2} h_{i j}(r,\omega, \mathcal{J},\mathcal{M},\mathcal{K}') \lsigma^i_{\mu} \lsigma^j_{\nu} D_{\mathcal{K'}-Q(\lsigma^{i})-Q(\lsigma^{j}) \mathcal{M}}^\mathcal{J} -->
-<!-- \end{equation} -->
-
-<!-- $Q$ is the, $W_3$, angular momentum charge of the the **$i$**th basis. -->
-
-<!-- <!-1- Q(\lsigma^i) = \lambda ~\text{where}~ W_3 \lsigma^i = \lambda \lsigma^i -1-> -->
-<!-- \begin{equation*} -->
-<!--     Q(\lsigma^i) = \lambda ~if~ i=r,t,3;\quad 1 ~if~ i=+;\quad -1 ~if~ i=- --> 
-<!-- \end{equation*} -->
-
-<!-- Plugging the decomposed perturbation in to its equations of motion: -->
-
-<!-- - The perturbations of different $((\mathcal J, \mathcal M), \mathcal K')$ decouple -->
-<!-- - The angular momentum quantum parameter, $\mathcal M$, does not appear in the equations. -->
-<!-- - Perturbations are non-trivially labeled by $(\mathcal J, \mathcal K')$ -->
-
-<!-- --------------------------------------- -->
-
-<!-- Similar to plane waves of black brane perturbations, $D_{\mathcal KM}^\mathcal J$ for a complete set on $S^3$. -->
-
-<!-- :::::::::::::: {.columns align=center} -->
-<!-- ::: {.column width="50%"} -->
-<!-- \begin{equation}\label{eq:WLalgebra} -->
-<!--     \begin{aligned} -->
-<!--     [L_a,L_a] &= i \epsilon_{abc} L_c \\ --> 
-<!--     [W_a,W_b] &= -i \epsilon_{abc} W_c \\ -->
-<!--     [W_a,L_b] &= 0\\ -->
-<!--     \end{aligned} -->
-<!--  \end{equation} -->
-<!-- ::: -->
-<!-- ::: {.column width="50%"} -->
-<!-- \begin{align} -->
-<!--    L^2 D^\mathcal{J}_{\mathcal{KM}}&=\mathcal{J}(\mathcal{J}+1)D^\mathcal{J}_{\mathcal{KM}}\nonumber\\ -->
-<!--     L_3D^\mathcal{J}_{\mathcal{KM}}&=\mathcal{M} D^\mathcal{J}_{\mathcal{KM}}\\ -->
-<!--     W_3 D^\mathcal{J}_{\mathcal{KM}}&=\mathcal{K} D^\mathcal{J}_{\mathcal{KM}}\nonumber -->
-<!-- \end{align} -->
-<!-- ::: -->
-<!-- :::::::::::::: -->
-
-<!-- One can use the raising and lowering operators (forms) -->  
-
-<!-- $L_\pm  = L_1 \pm i L_2$ ($\sigma^\pm = \frac{1}{2} \left(\sigma^1 \mp i \sigma^2 \right)$) -->
-
-<!-- \begin{equation}\label{eq:form_basis} -->
-<!--     \begin{aligned} -->
-<!--         \sigma^1&=d\phi \sin (\theta ) \cos (\psi )-d\theta \sin (\psi ) \\ -->
-<!--         \sigma^2&=d\theta  \cos (\psi )+d\phi \sin (\theta ) \sin (\psi )\\ -->
-<!--         \sigma^3&=d\psi+d\phi  \cos (\theta )\\ -->
-<!--         \lsigma^i&=(\exd t, \sigma^+,\sigma^-,\sigma^3, \exd r) -->
-<!--     \end{aligned} -->
-<!-- \end{equation} -->
-
-<!-- ## Tensor, Vector, and Scalar Sectors -->
-
-<!-- <!-1- WARN: Do not dwell on the infinite number of sectors -1-> -->
-
-<!-- Based on the "$(\mathcal J, \mathcal K')$" classification of sectors there are an infinite number of sectors. -->
-
-<!-- [Amano, Kaminski et al. 2023][amano2023] takes a look at three of these sectors. -->
-
-<!-- Tensor -->
-<!-- : $\mathcal K' = \mathcal J + 2$; $h_{++}$ -->
-
-<!-- Vector -->
-<!-- : $\mathcal K' = \mathcal J + 1$; $h_{+r}$, $h_{+t}$, $h_{+3}$ (, and $h_{++}$ if $\mathcal J \geq 1$) -->
-
-<!-- Scalar -->
-<!-- : $\mathcal K' = \mathcal J$, $h_{+-}$; $h_{ab}$ where $a,b \in \{r,t,3\}$ -->  
-<!--                  (, $h_{+r}$, $h_{+t}$, $h_{+3}$ if $\mathcal J \geq 1$ ) (, and $h_{++}$ if $\mathcal J \geq 2$) -->
-
-<!-- ## Quasinormal Modes -->
-
-<!-- <!-1- WARN: Do not dwell here -1-> -->
-
-<!-- The quasinormal modes[^greens] are defined as **non-trivial** solutions to linearized Einstein equations and obey the two boundary conditions. -->
-
-<!-- ### BCs -->
-
-<!-- - Ingoing at the horizon -->
-<!-- - Sourceless at the AdS Boundary (a Dirichlet boundary condition) -->
-
-<!-- [^greens]: They are dual to the poles of retarted Greens functions -->
-
-<!-- ### Parameters -->
-
-<!-- - $\mathcal J = 0, 1/2, 1, 3/2, 2, \ldots$ is the discrete (angular) momentum. --> 
-<!-- - $\omega_{ \mathcal J }$ are discrete eigen-frequencies (QNMs) such that the BCs are fulfilled. -->
-
-<!-- ## Review Summary {.squeeze} -->
-
-<!-- NOTE: these methods should include the technical details -->
-
-<!-- ### Study Flow -->
-
-<!-- 1. Pick the 5D Myers-Perry "Simply Spinning" solution (dual to some strongly rotating plasma) -->
-<!-- 1. Solve linearized Einstein equation for quasinormal modes. -->
-<!-- 1. Analyze the spectra and compare with hydrodynamics (and non-hydrodynamics?) -->
-
-<!-- ### QNMs Method -->
-
-<!-- 1. Derive Linear Einstein Field Equations in EF ingoing coordinates with mentioned $h_{\mu\nu}$ decomposition -->
-<!-- 1. Impose radial gague $h_{\mu r} = 0$ -->
-<!-- 1. Discretize with collocation method on a pseudospectral grid and enforce sourceless BC. -->
-<!-- 1. Linearize eigenvalue problem and solve with Mathematica's `Eigenvalues`. -->
 
 # Results
 
@@ -489,41 +363,6 @@ To see the emergence of hydrodynamics, we fitted the data to the equation below 
 \textcolor{blue}{$\cdot$ Scalar}
 :::
 ::::::::::::::
-
-<!-- ## Stability -->
-
-<!-- :::::::::::::: {.columns align=center} -->
-<!-- ::: {.column width="40%"} -->
-<!-- It's well known that the MPAdS5D solution suffers from superadiant instabilities ([Murata 2009][murata2009], [Dias et al](https://inspirehep.net/literature/875604)). -->
-
-<!-- Study was done a regime that is stable for large enough $r_+$. -->
-
-<!-- This instability is signaled by boundary turning from a timelike surface to a spacelike surface (for stationary observers). -->
-<!-- ::: -->
-<!-- ::: {.column width="60%"} -->
-<!-- ![$\mathcal{J} = 5$ frequencies, zoomed in. Positive imaginary modes are unstable.](figures/tensor_unstable_modes_vs_a_J5.pdf){height=70%} -->
-<!-- ::: -->
-<!-- :::::::::::::: -->
-
-<!-- ## RFP (Read the Fantastic Papers!) -->
-
-<!-- [Amano et al. 2022][amano2022mlu] -->
-
-<!-- - Pole-Skipping -->
-<!-- - Chaos -->
-<!-- - Gravitational Shockwaves -->
-
-<!-- [Cartwright et al. 2023][cartwright2021qpp] -->
-
-<!-- - Critical Points -->
-
-<!-- # Conclusion -->
-
-<!-- ## Summary and Outlook -->
-
-<!-- ### Main Message -->
-
-<!-- We find hydro applies in regimes where the dual fluid is not necessarily a homogeneously boasted fluid. -->
 
 ## Outlook
 
