@@ -37,46 +37,45 @@ With a classical gravity description, describe the characteristic spectrum of ro
 <!-- - the dual rotating conformal plasma (*highly vortical* heavy ion collisions) -->  
 :::
 ::: {.column width="50%"}
-ANIMATION
-<!-- \begin{center} -->
-<!--     \animategraphics[loop,autoplay,width=\textwidth]{10}{build/tensor_dance_v2-}{0}{121} -->
-<!-- \end{center} -->
+\begin{center}
+    \animategraphics[loop,autoplay,width=\textwidth]{10}{build/tensor_dance_v2-}{0}{121}
+\end{center}
 :::
 ::::::::::::::
 
 ## AdS/CFT Primer
 
-What is AdS/CFT (AdS/CFT対応)?
-: A *dynamic* duality between $D+1$ dim. IIB String theory on $AdS\times \mathrm S^5$ and 
-  $\mathcal N = 4$ Super Yang-Mills (SYM) with $SU(N)$
+<!-- What is AdS/CFT (AdS/CFT対応)? -->
+<!-- : A *dynamic* duality between $D+1$ dim. IIB String theory on $AdS\times \mathrm S^5$ and --> 
+<!--   $\mathcal N = 4$ Super Yang-Mills (SYM) with $SU(N)$ -->
 
-What is AdS/CFT (weak limit $N \rightarrow \infty$)?
-: A *dynamic* duality between $5$ dim. Einstein Gravity with AdS and $4$ dim. Conformal Field theory (CFT) (large $N$ SYM)
+AdS/CFT (weak form $N \rightarrow \infty$) (ゲージ／重力双対)
+: A *dynamic* duality (動的な双対) between $5$dim. GR (一般相対論) in AdS (反ド・ジッター空間) and $4$dim. Strongly Coupled (強結合) Conformal Field theory (共形場理論; CFT)
 
 <!-- AdS/CFT -->
 <!-- : Can use Einstein gravity in one dimension higher to analyze strongly coupled CFT -->
 
 - $\text{AdS}~\leftrightarrow T= 0~\text{CFT}$
-- $\text{AdS Static Black Hole}~\leftrightarrow T\neq 0~\text{CFT}$
+- $\text{AdS Unchanging Black Hole}~\leftrightarrow T\neq 0~\text{CFT}$
 - $\text{AdS Rotating Black Hole}~\leftrightarrow T\neq 0~\text{Rotating CFT} \equiv~\text{"Rotating Plasma"}$
 
 ### Question
 
-How do thermal, strongly coupled plasma react to perturbations and how does putting them under rotation affect it's response?
+How do thermal (熱的), strongly coupled plasmas (プラズマ) react to perturbations (摂動), and how does putting them under rotation (回転させる) affect how the plasma reponds to perturbations?
 
 <!-- TODO: What is a black hole --> 
 <!-- TODO: Answer what is AdS --> 
 
 ## The Hydrodynamic Description
 
-Thermal state on the boundary is a conformal plasma that obeys energy-momentum conservation  **with no source** $\partial_\mu T^{ \mu\nu } = 0$.
+Thermal state (熱平衡状態) on the boundary (境界) is a conformal plasma that obeys energy-momentum conservation (運動量・エネルギー保存) **with no source** $\partial_\mu T^{ \mu\nu } = 0$.
 
-Conformal Field Theory (CFT)
+Conformal Field Theory (共形場理論; CFT)
 : Field theory invariant under conformal transformations (rotations, translations, scalings)
 
-Scaling invariance $\implies T^\mu_\mu = 0$
+Scaling invariance (スケール不変性) $\implies T^\mu_\mu = 0$
 
-Around thermal equilibrium we want to find characteristic perturbations
+Around thermal equilibrium we want to find characteristic perturbations (固有摂動)
 \begin{equation}
     \delta T^{\mu\nu} \propto e^{-i\omega t + i\vec k \cdot \vec \mathbf X} \in ( T^{(0)} )^{\mu\nu} + \delta T^{\mu\nu} = ( T^{( p )} )^{\mu\nu}
 \end{equation} 
@@ -91,21 +90,22 @@ g^{p}_{\mu\nu} {dx}^\mu {dx}^\nu = \left(g_{\mu\nu}+\epsilon~h_{\mu\nu}+O(\epsil
 h_{\mu\nu} \sim r^2 h^{\mathrm{(0)}}_{\mu\nu} + h^{\mathrm{(1)}}_{\mu\nu}/r^2
 \end{equation} 
 
-- $h^{\mathrm{(0)}}_{\mu\nu}$ $\leftrightarrow$ source of $\delta T$.
-- $h^{\mathrm{(1)}}_{\mu\nu}$ $\leftrightarrow$ Vacuum Expectation Value (VEV) of $\delta T_{\mu\nu} \equiv \langle \delta T_{\mu\nu} \rangle$.
+- $h^{\mathrm{(0)}}_{\mu\nu}$ $\leftrightarrow$ source of $\delta T$
+- $h^{\mathrm{(1)}}_{\mu\nu}$ $\leftrightarrow$ Vacuum Expectation Value (真空期待値
+; VEV) of $\delta T_{\mu\nu} \equiv \langle \delta T_{\mu\nu} \rangle$.
 
 <!-- $h^{\mathrm{(0)}}_{\mu\nu} = 0$ -->
 <!-- : Sourceless boundary condition. -->
 
 <!-- WARN: Be carful of "flat" questions -->
 
-Conservation Equations
+Conservation Equations (保存則)
 : $\nabla_\mu T^{\mu\nu} \stackrel{\mathrm{flat}}{=} \partial_\mu T^{\mu\nu} \stackrel{\mathrm{Fourier}}{=} ik_{\mu} T^{\mu\nu} = 0$
 
-Constitutive Equations[^conseq]
+Constitutive Equations (材料の構成式)[^conseq]
 : $T_{\mu\nu} = \epsilon u^\mu u^\nu + P \Pi^{\mu\nu} + \pi^{\mu\nu} + ... = \left( T^{\mathrm{(0)}}\right)^{\mu\nu} + \delta T^{\mu\nu}$
 
-Hydro Variables
+Hydrodynamic Variables (温度, 流体速度)
 : $u^\mu$ and $T$
 
 [^conseq]: $u^\mu$ are the hydrodynamic velocity variables that points in the forward time direction. $\Pi^{\mu\nu} := u^{\mu}u^{\nu} + \eta^{\mu\nu}$.
@@ -119,22 +119,22 @@ Hydro Variables
 
 <!-- NOTE: variation with respect to metric can be used to derive transport coefficients. --> 
 
-Order 0 (Ideal Hydro)
+Order 0 (Ideal Hydrodynamics)
 : $\partial_\mu\left(\epsilon u^\mu u^\nu + P \Pi^{\mu\nu}\right) = 0$ (where $u = (1, 0, 0, 0)$)
 
-Order 1 (First Order Hydro) ([Kovtun 2019](https://inspirehep.net/literature/1744607))
+Order 1 (First Order Hydrodynamics) ([Kovtun 2019](https://inspirehep.net/literature/1744607))
 : $\partial_\mu \pi^{\mu\nu} \stackrel{\mathrm{Fourier}}{=} ik_{\mu}\pi^{\mu\nu} = 0$
 
-Order n (nth Order Hydro)
+Order n (nth Order Hydrodynamics)
 : $\partial_\mu \delta T^{\mu\nu} = 0$
 
-The generalized eigenvalue problem implicitly defines $\omega$ as a function of $|k|$. [^sym]
+The generalized eigenvalue problem (一般固有値分解) implicitly defines $\omega$ (固有振動数) as a function of $|k|$ ($\omega$は$|k|$による関数). [^sym]
 
 \begin{equation}
 \omega = \sum_{a=0} \Omega_{a} |k|^{a}
 \end{equation}
 
-Hydrodynamic Modes
+Hydrodynamic Modes 
 : $\left.\omega\right\vert_{|k| = 0} = 0$
 
 Non-Hydrodynamic Modes
@@ -142,25 +142,25 @@ Non-Hydrodynamic Modes
 
 [^sym]: Assuming we can rotate globally to align $k$ to any direction.
 
-## AdS Gravity
+## General Relativity in AdS 
 
 \begin{equation}
     S_{\mathrm{Gravity}} = \frac 1{16\pi G_5} \int \sqrt{-g} (R - 2\Lambda) + S_{\text{ct}}
 \end{equation}
 
-Ricci Curvature Scalar
+Ricci Curvature Scalar (スカラー曲率)
 : $R$
 
-Cosmological Constant
+Cosmological Constant (宇宙定数)
 : $\Lambda = -6/L^2$
 
-AdS Radius of Curvature
+AdS Radius of Curvature (AdSの曲率半径)
 : $L$
 
-Solve Einstein's field equations $\delta S/\partial g_{\mu\nu} = 0$ for $g_{\mu\nu}$ ([Hawking & Reall 1998][hawking1998])  
+Rotating solution for $\delta S/\partial g_{\mu\nu} = 0$ ([Hawking & Reall 1998][hawking1998])  
 
 ### Note {.alert}
-In $4+1$D there are two independent planes of rotation
+In $4+1$D there are two independent planes of rotation $\implies$ to independent angular momentum
 
 <!-- Rotating black holes ( $R^{1,1}\times S^3$ ) -->
 
@@ -168,7 +168,7 @@ In $4+1$D there are two independent planes of rotation
 
 <!-- $S^1\times S^1 \implies$ two axial angular momenta. -->
 
-## 5D AdS Myers-Perry Black Hole ([Hawking & Reall 1998][hawking1998])
+## 5D AdS Myers-Perry Metric ([Hawking & Reall 1998][hawking1998])
 
 <!-- \begin{align}\label{eq:MP_Black_Hole} -->
 <!-- ds^2&=\frac{\left(1+r_H^2\ell^{-2}\right)}{\rho ^2 r_H^2} \left(a b \mathrm{d} t_H-\frac{b  \left(a^2+r_H^2\right) \sin ^2(\theta_H )}{\Xi_a}\mathrm{d} \phi_H-\frac{a  \left(b^2+r_H^2\right) \cos ^2(\theta_H )}{\Xi_b}\mathrm{d}\psi_H\right)^2 \nonumber\\ -->
@@ -202,7 +202,7 @@ In $4+1$D there are two independent planes of rotation
 :::::::::::::: {.columns align=center}
 ::: {.column width="50%"}
 - Cooridnates: $(t, \theta, \phi, \psi, r)$
-- Specific angular momentum of $a$ from $a, b$
+- Specific angular momentum (質量あたりの角運動量), $a$
 - Enhanced Symmetry $S^1\times S^1\nearrow S^2\times S^1$
 <!-- - $\sigma$'s are the left-invariant forms of $SO(3)$ rotations. -->
 :::
@@ -226,23 +226,23 @@ Perturbed metric to first order
         g^{p}_{\mu\nu} {dx}^\mu {dx}^\nu = \left(g_{\mu\nu}+\epsilon~h_{\mu\nu}+O(\epsilon^2)\right) {dx}^\mu {dx}^\nu\,,
 \end{align}
 
-The Einstein Field Equations at first order ([Wald 1984][wald1984]) are linear PDEs.
+The Einstein Field Equations at first order, $\epsilon$, ([Wald 1984][wald1984]) are linear partial differential equations.
 
 \begin{align}\label{eq:pertgenericeom}
        -\frac{1}{2}\nabla_\mu \nabla_\nu h-\frac{1}{2}\nabla^\lambda \nabla_\lambda h_{\mu\nu}+\nabla^\lambda \nabla_{(\mu}h_{\nu)\lambda} = \frac{2\Lambda}{D-2}h_{\mu\nu}\,,
 \end{align}
 
-The enhanced symmetry can be used to reduce the perturbation equations to ODEs given angular momenta $(\mathcal J, \mathcal K')$.
+The enhanced symmetry can be used to reduce the perturbation equations to ordinary differential equations given angular momenta $(\mathcal J, \mathcal K')$.
 
 --------------------------------
 
-Perturbations EOMs must have boundary conditions imposed
+<!-- Perturbation equations of motion have two boundary conditions -->
 
 ### Boundary Conditions
-- Ingoing at the horizon, $r = r_+$
-- Sourceless at the boundary, $h^{(0)}_{\mu\nu} = 0$ where $h_{\mu\nu} \sim r^2 h^{\mathrm{(0)}}_{\mu\nu} + h^{\mathrm{(1)}}_{\mu\nu}/r^2$
+- Casality $\implies$ ingoing at the horizon, $r = r_+$
+- Sourcesless hydrodynamics $\implies$ sourceless at the boundary, $h^{(0)}_{\mu\nu} = 0$ where $h_{\mu\nu} \sim r^2 h^{\mathrm{(0)}}_{\mu\nu} + h^{\mathrm{(1)}}_{\mu\nu}/r^2$
 
-The EOM and boundary conditions together define  
+The EOM and boundary conditions together define
 
 - a non-linear eigenvalue problem and
 - discrete spectra of frequencies $\omega$ given momentum.
@@ -357,13 +357,12 @@ The EOM and boundary conditions together define
 
 [Amano, Kaminski et al.][amano2023]
 
-- Non-Hydrodynamic Modes and the effects of non-extremal rotation.
-    - Tensor
-    - Vector
-    - Scalar
+- Non-Hydrodynamic Modes and effects of rotation
+    - Tensor, $\mathcal K' = \mathcal J + 2$
+    - Vector, $\mathcal K' = \mathcal J + 1$
+    - Scalar, $\mathcal K' = \mathcal J$
 - Cross Spectrum Comparison
 - The Emergence of Hydrodynamics
-- Stability
 
 ## $\mathcal K' = \mathcal J + 2$ Tensor Sector
 
