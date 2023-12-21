@@ -75,7 +75,7 @@ Conformal Field Theory (共形場理論; CFT)
 
 Scaling invariance (スケール不変性) $\implies T^\mu_\mu = 0$
 
-Around thermal equilibrium we want to find characteristic perturbations (固有摂動)
+Around thermal equilibrium (平衡状態) we want to find characteristic perturbations (固有摂動)
 \begin{equation}
     \delta T^{\mu\nu} \propto e^{-i\omega t + i\vec k \cdot \vec \mathbf X} \in ( T^{(0)} )^{\mu\nu} + \delta T^{\mu\nu} = ( T^{( p )} )^{\mu\nu}
 \end{equation} 
@@ -160,7 +160,7 @@ AdS Radius of Curvature (AdSの曲率半径)
 Rotating solution for $\delta S/\partial g_{\mu\nu} = 0$ ([Hawking & Reall 1998][hawking1998])  
 
 ### Note {.alert}
-In $4+1$D there are two independent planes of rotation $\implies$ to independent angular momentum
+In $4+1$D there are two independent planes of rotation (回転の面) $\implies$ to two independent angular momenta 
 
 <!-- Rotating black holes ( $R^{1,1}\times S^3$ ) -->
 
@@ -183,7 +183,7 @@ In $4+1$D there are two independent planes of rotation $\implies$ to independent
 ::: {.column width="50%"}
 - Cooridnates: $(t, \theta, \phi, \psi, r)$
 - Specific angular momentum (質量あたりの角運動量), $a$
-- Enhanced Symmetry $S^1\times S^1\nearrow S^2\times S^1$
+- Expanded Horizon Symmetry $S^1\times S^1\nearrow S^2\times S^1$
 <!-- - $\sigma$'s are the left-invariant forms of $SO(3)$ rotations. -->
 :::
 ::: {.column width="50%"}
@@ -200,13 +200,13 @@ In $4+1$D there are two independent planes of rotation $\implies$ to independent
 
 ## Gravitational Perturbations
 
-Perturbed metric to first order
+Perturbed metric to first order in $\epsilon$
 
 \begin{align}\label{eq:pertgeneric}
         g^{p}_{\mu\nu} {dx}^\mu {dx}^\nu = \left(g_{\mu\nu}+\epsilon~h_{\mu\nu}+O(\epsilon^2)\right) {dx}^\mu {dx}^\nu\,,
 \end{align}
 
-The Einstein Field Equations at first order, $\epsilon$, ([Wald 1984][wald1984]) are linear partial differential equations.
+The Einstein field equations at first order, $\epsilon$, ([Wald 1984][wald1984]) are linear partial differential equations.
 
 \begin{align}\label{eq:pertgenericeom}
        -\frac{1}{2}\nabla_\mu \nabla_\nu h-\frac{1}{2}\nabla^\lambda \nabla_\lambda h_{\mu\nu}+\nabla^\lambda \nabla_{(\mu}h_{\nu)\lambda} = \frac{2\Lambda}{D-2}h_{\mu\nu}\,,
@@ -219,13 +219,14 @@ The enhanced symmetry can be used to reduce the perturbation equations to ordina
 <!-- Perturbation equations of motion have two boundary conditions -->
 
 ### Boundary Conditions
-- Casality $\implies$ ingoing at the horizon, $r = r_+$
-- Sourcesless hydrodynamics $\implies$ sourceless at the boundary, $h^{(0)}_{\mu\nu} = 0$ where $h_{\mu\nu} \sim r^2 h^{\mathrm{(0)}}_{\mu\nu} + h^{\mathrm{(1)}}_{\mu\nu}/r^2$
+- Causality (因果性) $\implies$ ingoing boundary condition (落下の境界条件) at the horizon, $r = r_+$
+- Sourceless hydrodynamics $\implies$ sourceless at the boundary, $h^{(0)}_{\mu\nu} = 0$  
+  $h_{\mu\nu} \sim r^2 h^{\mathrm{(0)}}_{\mu\nu} + h^{\mathrm{(1)}}_{\mu\nu}/r^2$
 
-The EOM and boundary conditions together define
+The equations of motion and boundary conditions together $\rightarrow$
 
-- a non-linear eigenvalue problem and
-- discrete spectra of frequencies $\omega$ given momentum.
+- an eigenvalue problem and
+- discrete spectra of frequencies $\omega$
 
 # Results
 
