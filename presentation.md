@@ -2,7 +2,7 @@
 title: Relativistic Hydrodynamics under Rotation with Holography
 author: Markus A.G. Amano (マーカス・AG・アマノ)
 affilitation: Yamagata University (山形大学)
-institute: Yamagata University (山形大学)
+institute: Yamagata University (山形大学) Under Prof. Minoru Eto (衛藤稔先生)
 date: December 21^st^, 2023
 aspectratio: 169 
 theme: metropolis
