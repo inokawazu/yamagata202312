@@ -23,20 +23,24 @@ toc: false
 
 # Overview & Methods {.squeeze}
 
+[^previoustalk]: [Holotube Version of this talk](https://github.com/inokawazu/holotube2023)
+
 :::::::::::::: {.columns align=center}
 ::: {.column width="50%"}
 
-[Amano, Kaminski et al. 2023][amano2023]
-: an overview of recent developments arising from the study of simply spinning AdS Myers-Perry black holes
+[Amano, Kaminski et al. 2023][amano2023][^previoustalk]
 
-Goal ...
+- an overview of recent developments arising from the study of simply spinning AdS Myers-Perry black holes
 
-With a classical gravity description, describe the characteristic spectrum of rotating conformal fluid. ([STAR Collaboration 2017](https://inspirehep.net/literature/1510474), [Bantilan et al](https://inspirehep.net/literature/1665231)).
+**Goal**
+
+- With a classical gravity description, describe the characteristic spectrum of rotating conformal fluid. ([STAR Collaboration 2017](https://inspirehep.net/literature/1510474), [Bantilan et al](https://inspirehep.net/literature/1665231)).
 
 <!-- - Spherical, Rotating Black Holes in **AdS** and -->
 <!-- - the dual rotating conformal plasma (*highly vortical* heavy ion collisions) -->  
 :::
 ::: {.column width="50%"}
+
 \begin{center}
     \animategraphics[loop,autoplay,width=\textwidth]{10}{build/tensor_dance_v2-}{0}{121}
 \end{center}
